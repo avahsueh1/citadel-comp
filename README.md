@@ -2,6 +2,8 @@
 
 Python workspace for public-data research, operating forecasts, and Monte Carlo valuation. Copart (CPRT) is the initial research candidate; no investment thesis has been validated yet.
 
+See [PROJECT_SCOPE.md](PROJECT_SCOPE.md) for the detailed research plan, data requirements, modeling and valuation methods, validation gates, deliverables, and schedule.
+
 ## Setup (PowerShell)
 
 Use Python 3.11 or newer.
