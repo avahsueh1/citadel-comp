@@ -2,7 +2,8 @@
 
 **Research draft for team development, September 30, 2026. AI-assisted text must not be submitted under the competition's rules. The team must independently author the final memorandum.**
 
-**CPRT | Recommendation: [Steven: LONG or SHORT] | Horizon: [3-12 months]**  
+**CPRT | Recommendation: [Steven: LONG or SHORT] | Horizon: [3-12 months]**
+
 **Reference price: [verify price and date] | Target price: [after assumption testing] | Expected return: [calculate from final target and reference price]**
 
 ## Investment thesis
