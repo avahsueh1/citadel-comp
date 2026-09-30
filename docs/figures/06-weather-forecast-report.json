@@ -1,0 +1,57 @@
+{
+  "origin": "2026-09-30",
+  "data_through": "2025-12-31",
+  "source_sha256": "3f93c37150c9bbce0fe2116d681606453795469b3178151b2b47a5e1f60544a9",
+  "metrics": {
+    "hail": {
+      "selected_method": "seasonal_median",
+      "development_mae": {
+        "seasonal_median": 718.4047619047619,
+        "ridge_trend": 1029.1938839682282
+      },
+      "holdout_mae": {
+        "seasonal_median": 307.1666666666667,
+        "ridge_trend": 1297.2643469989723
+      },
+      "holdout_n": 6,
+      "development_n": 21,
+      "holdout_band_coverage": 1.0,
+      "band_radius": 1388.0
+    },
+    "flash_flood": {
+      "selected_method": "seasonal_median",
+      "development_mae": {
+        "seasonal_median": 236.54761904761904,
+        "ridge_trend": 327.7214242848078
+      },
+      "holdout_mae": {
+        "seasonal_median": 448.5833333333333,
+        "ridge_trend": 534.5589318581747
+      },
+      "holdout_n": 6,
+      "development_n": 21,
+      "holdout_band_coverage": 0.6666666666666666,
+      "band_radius": 442.0
+    },
+    "flood": {
+      "selected_method": "seasonal_median",
+      "development_mae": {
+        "seasonal_median": 350.8809523809524,
+        "ridge_trend": 362.5030066159704
+      },
+      "holdout_mae": {
+        "seasonal_median": 186.75,
+        "ridge_trend": 145.16053683738133
+      },
+      "holdout_n": 6,
+      "development_n": 21,
+      "holdout_band_coverage": 1.0,
+      "band_radius": 548.0
+    }
+  },
+  "development_origins": "September 2015\u20132021",
+  "embargo_origin": "September 2022",
+  "holdout_origins": "September 2023 and 2024",
+  "financial_relationship_validated": false,
+  "warning": "Revised-data statistical weather outlook; not a Copart revenue forecast. Development residual ranges have no guaranteed forward probability coverage."
+}

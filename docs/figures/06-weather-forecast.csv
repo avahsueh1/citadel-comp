@@ -1,0 +1,10 @@
+origin,period,category,method,forecast,lower,upper
+2026-09-30,2027Q2,hail,seasonal_median,163.0,0.0,1551.0
+2026-09-30,2027Q3,hail,seasonal_median,2262.5,874.5,3650.5
+2026-09-30,2027Q4,hail,seasonal_median,5393.5,4005.5,6781.5
+2026-09-30,2027Q2,flash_flood,seasonal_median,199.0,0.0,641.0
+2026-09-30,2027Q3,flash_flood,seasonal_median,521.0,79.0,963.0
+2026-09-30,2027Q4,flash_flood,seasonal_median,1667.5,1225.5,2109.5
+2026-09-30,2027Q2,flood,seasonal_median,385.0,0.0,933.0
+2026-09-30,2027Q3,flood,seasonal_median,653.5,105.5,1201.5
+2026-09-30,2027Q4,flood,seasonal_median,799.5,251.5,1347.5

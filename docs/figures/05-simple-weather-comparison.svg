@@ -447,6 +447,30 @@ L 319.718919 402.031304
    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; fill: #52616d" transform="translate(43.2 572.382)">Reference: 63 complete fiscal quarters; 15–16 per quarter number, including FY2025.</text>
    <text style="font-size: 7.5px; font-family: 'DejaVu Sans'; fill: #52616d" transform="translate(43.2 583.632)">Counts are records, not unique storms, insured losses or Copart volumes. No financial effect is estimated.</text>
   </g>
+  <g id="legend_1">
+   <g id="patch_17">
+    <path d="M 46.8 122.326594
+L 60.3 122.326594
+L 60.3 116.026594
+L 46.8 116.026594
+z
+" style="fill: #227699"/>
+   </g>
+   <g id="text_45">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start" x="67.5" y="122.326594" transform="rotate(-0 67.5 122.326594)">Fewer records than seasonal median</text>
+   </g>
+   <g id="patch_18">
+    <path d="M 251.045156 122.326594
+L 264.545156 122.326594
+L 264.545156 116.026594
+L 251.045156 116.026594
+z
+" style="fill: #b95f44"/>
+   </g>
+   <g id="text_46">
+    <text style="font-size: 9px; font-family: 'DejaVu Sans'; text-anchor: start" x="271.745156" y="122.326594" transform="rotate(-0 271.745156 122.326594)">More records than seasonal median</text>
+   </g>
+  </g>
  </g>
  <defs>
   <clipPath id="p3ff54a865f">

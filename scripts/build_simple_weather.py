@@ -9,6 +9,7 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 import pandas as pd
+from matplotlib.patches import Patch
 
 
 def build():
@@ -57,6 +58,20 @@ def build():
         "Q3   Feb–Apr 2025",
         "Q4   May–Jul 2025",
     ]
+    fig.legend(
+        handles=[
+            Patch(facecolor="#227699", label="Fewer records than seasonal median"),
+            Patch(facecolor="#B95F44", label="More records than seasonal median"),
+        ],
+        loc="upper left",
+        bbox_to_anchor=(0.06, 0.815),
+        ncol=2,
+        frameon=False,
+        fontsize=9,
+        borderaxespad=0,
+        handlelength=1.5,
+        columnspacing=2,
+    )
     for ax, key, title in zip(axes, keys, ["Hail", "Flash flood", "Flood"]):
         values = recent[key].to_numpy()
         ax.barh(

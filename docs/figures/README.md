@@ -58,6 +58,22 @@ The script validates the complete 192-month input before creating the figures. O
 
 ## Financial exhibits to add once actuals are available
 
+### Forward weather exhibit added September 30
+
+`06-predictive-weather.png` and `.svg` forecast FY2027 Q2–Q4 event-record counts
+with an explicit dot/whisker legend. Regenerate with
+`.venv/Scripts/python.exe scripts/build_predictive_weather.py`.
+The adjacent `06-weather-forecast.csv`, `06-weather-backtest.csv` and
+`06-weather-forecast-report.json` contain every forecast, test result and model
+selection metric. These are 240-dpi PNG and vector SVG outputs.
+See `../predictive-weather-methodology.md` for limitations. The seasonal median
+wins development selection for all categories; no financial effect is validated.
+
+The historical `05-simple-weather-comparison` now has a blue/orange legend:
+blue means fewer records than the seasonal median; orange means more records.
+
+### Financial validation still outstanding
+
 1. Held-out actual revenue versus baseline and weather-model predictions, with forecast origin and test periods visible.
 2. Forecast-error comparison showing whether weather adds value over both simple baselines.
 3. Revenue/earnings sensitivity through the friend's financial model, with explicitly sourced or judgmental assumptions.

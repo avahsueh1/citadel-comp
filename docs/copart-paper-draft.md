@@ -26,7 +26,23 @@ Our NOAA analysis measures hail, flash-flood, and flood event records across U.S
 
 These observations do not measure insured losses or Copart volumes. The weather regression has not yet been validated against Copart financial actuals, and revised NOAA files do not reconstruct information available at each historical forecast date. The workbook's four annual observations are insufficient for the planned predictive evaluation. Until a longer, preferably quarterly series is tested, weather should remain contextual evidence rather than a numerical earnings uplift.
 
-[After testing: identify the forecast target, sample and test periods, baseline error, weather-model error, and limitations. State whether weather improved predictions. If it did not, retain the simpler forecast and report that result.]
+The September 30, 2026 statistical weather outlook predicts FY2027 Q2–Q4 records.
+Seasonal medians beat fixed-penalty ridge regression in development model selection
+for all categories. On six separate held-out quarters, selected mean absolute
+errors are 307 hail, 449 flash-flood and 187 flood records. Ridge errors are 1,297,
+535 and 145 respectively; the better flood holdout result does not justify changing
+the previously selected model. Development-based nominal 80% error ranges cover
+six, four and six of the respective six holdout outcomes. This small revised-data
+test cannot guarantee forward coverage. The forecast uses data through December
+2025, with October 2025 the latest complete fiscal quarter. Full protocol and
+reproducible forecasts: `docs/predictive-weather-methodology.md` and
+`docs/figures/06-weather-forecast-report.json`.
+
+This is a genuine predictive weather component, but the operating and valuation
+link is still missing. A weather-count forecast alone cannot establish support
+for the team's investment thesis. [Team: supply a supported Copart operating
+forecast, compare with a financial-only benchmark and a sourced market expectation,
+then quantify its effect on the separate Excel valuation.]
 
 ## Valuation and model implications
 

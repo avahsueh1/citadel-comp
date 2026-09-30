@@ -2,6 +2,14 @@
 
 Implemented September 29, 2026. This is an initial research implementation, not evidence that weather predicts Copart's earnings. The friend's financial model and historical input series were not present on `origin/main` when this work began.
 
+September 30 update: a separate, tested **forward weather-count outlook** now runs
+with `python scripts/build_predictive_weather.py`. See
+[predictive-weather-methodology.md](predictive-weather-methodology.md) for the
+dated FY2027 forecasts, benchmark comparison, holdout results and uncertainty.
+This does not train the financial-target model described below. The supplied
+Excel workbook is now available locally, but its four annual actuals are
+insufficient to train that planned Copart model.
+
 ## What runs now
 
 1. Download official NOAA Storm Events annual detail snapshots for complete years.
