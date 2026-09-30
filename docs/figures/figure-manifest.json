@@ -1,0 +1,11 @@
+{
+  "input": "data\\processed\\weather-monthly.csv",
+  "sha256": "3f93c37150c9bbce0fe2116d681606453795469b3178151b2b47a5e1f60544a9",
+  "rows": 192,
+  "purpose": "descriptive_research_not_financial_prediction",
+  "fiscal_comparison": "same-quarter median across complete quarters within 2010\u20132025",
+  "formats": [
+    "PNG 220 dpi",
+    "SVG vector"
+  ]
+}

@@ -53,6 +53,8 @@ tests/                        Future checks for data and model logic
 
 The initial NOAA weather downloader, monthly feature pipeline, and baseline-versus-weather regression experiment are implemented. See [the weather-model guide](docs/weather-model.md) for commands, historical target requirements, limitations, and the financial-model handoff. No real Copart model has been trained yet; financial actuals are required. Monte Carlo and valuation remain planned.
 
+See [weather research figures](docs/figures/README.md) for sourced PNG/SVG exhibits covering annual history, seasonality, and Copart fiscal-quarter deviations. Regenerate them with `python scripts/build_weather_figures.py` after building the monthly dataset.
+
 ## Development
 
 ```powershell
