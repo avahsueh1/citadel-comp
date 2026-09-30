@@ -29,7 +29,13 @@ def build():
     assert (recent.flash_flood > 0).all()
     assert (recent.hail < 0).sum() == 3
     blue, red, ink, muted = "#26769A", "#C4614F", "#222D35", "#67727B"
-    plt.rcParams.update({"font.family": "DejaVu Sans", "svg.fonttype": "none"})
+    plt.rcParams.update(
+        {
+            "font.family": "DejaVu Sans",
+            "svg.fonttype": "none",
+            "svg.hashsalt": "citadel-weather-editorial-v1",
+        }
+    )
     fig = plt.figure(figsize=(12, 9.5), facecolor="#FCFBF8")
     fig.text(0.065, 0.974, "COPART  /  WEATHER RESEARCH", fontsize=10, color=muted, weight="bold")
     fig.text(
@@ -141,7 +147,8 @@ def build():
     output.mkdir(parents=True, exist_ok=True)
     for ext in ["png", "svg"]:
         path = output / f"04-editorial-weather-distribution.{ext}"
-        fig.savefig(path, dpi=240, facecolor=fig.get_facecolor())
+        metadata = {"Date": None} if ext == "svg" else {}
+        fig.savefig(path, dpi=240, facecolor=fig.get_facecolor(), metadata=metadata)
         if ext == "svg":
             path.write_text(
                 "\n".join(s.rstrip() for s in path.read_text(encoding="utf-8").splitlines()) + "\n",

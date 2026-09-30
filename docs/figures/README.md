@@ -10,6 +10,8 @@ Gray dots show individual historical quarters; labeled colored dots show FY2025.
 
 Regenerate with `python scripts/build_editorial_weather.py`. PNG is 240 dpi; SVG is vector. The style is inspired by the editorial distribution examples discussed at https://www.juiceanalytics.com/writing/20-best-examples-of-charts-and-graphs ; all plotted values come from the project's NOAA dataset. It is an AI-assisted research exhibit, not independently authored competition submission content.
 
+Determinism: this exhibit is generated entirely in Python with pandas, SciPy, and Matplotlib. Dot jitter uses seed 42, SVG IDs use a fixed hash salt, and SVG creation timestamps are omitted. Two independent runs were verified to produce identical SHA-256 hashes for the PNG, SVG, exported quarter data, and manifest. This guarantee assumes unchanged input data, code, fonts, and package/runtime versions; rendering may differ across environments. Tested core package versions are recorded in `../weather-tested-environment.txt`.
+
 These are descriptive research exhibits based on real NOAA data, not Copart financial forecasts. Use them to investigate and explain the weather component. The competition's submission-authorship restrictions still apply; these AI-assisted exhibits are research materials for the team to independently evaluate.
 
 ## Recommended main research exhibit: fiscal-quarter deviations
