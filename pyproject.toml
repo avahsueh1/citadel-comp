@@ -21,6 +21,9 @@ dependencies = [
 dev = ["pytest>=8,<10", "ruff>=0.9,<1", "jupyterlab>=4,<5"]
 boosting = ["xgboost>=2,<4"]
 
+[project.scripts]
+citadel-weather = "citadel_comp.weather_cli:main"
+
 [tool.setuptools.packages.find]
 where = ["src"]
 

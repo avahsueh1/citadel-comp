@@ -51,7 +51,7 @@ tests/                        Future checks for data and model logic
 4. Add ML only if it improves on the baseline out of sample.
 5. Translate business-driver scenarios into valuation, making assumptions and correlations explicit.
 
-No data downloader, trained model, simulation, or valuation is implemented yet. The scaffold intentionally contains no invented results.
+The initial NOAA weather downloader, monthly feature pipeline, and baseline-versus-weather regression experiment are implemented. See [the weather-model guide](docs/weather-model.md) for commands, historical target requirements, limitations, and the financial-model handoff. No real Copart model has been trained yet; financial actuals are required. Monte Carlo and valuation remain planned.
 
 ## Development
 
@@ -60,7 +60,7 @@ No data downloader, trained model, simulation, or valuation is implemented yet. 
 .\.venv\Scripts\python.exe -m ruff format --check .
 ```
 
-Pytest is available for tests added with implementation. There are no tests yet.
+Run `.\.venv\Scripts\python.exe -m pytest -q` for weather-pipeline and forecast-timing tests. Synthetic fixtures test mechanics only, not investment performance.
 
 ## Competition use
 
