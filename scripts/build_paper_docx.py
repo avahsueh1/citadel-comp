@@ -17,7 +17,6 @@ def build():
     figures = root / "docs" / "figures"
     images = [
         figures / "04-editorial-weather-distribution.png",
-        figures / "02-weather-seasonality.png",
     ]
     doc = Document()
     section = doc.sections[0]
@@ -60,7 +59,7 @@ def build():
     para("CPRT  |  September 30, 2026  |  Research draft", 10, True)
     para("Recommendation: [Steven]   Horizon: [3–12 months]   Target: [after testing]", 10)
     para(
-        "AI-assisted research draft. The team must independently author final submission text under the competition rules.",
+        "Not submission-ready. Rules allow disclosed initial AI research but prohibit generative-AI submission content, in whole or part. This includes more than prose; Python generation does not itself establish eligibility.",
         8,
         color="7F4B35",
     )
@@ -79,7 +78,7 @@ def build():
         "The supplied workbook records FY2026 revenue of $4,666.2 million, up 0.4%, and operating income of $1,652.6 million versus $1,696.7 million in FY2025. Operating margin falls from 36.5% to 35.4%. Service revenue is approximately flat at $3,969.5 million; purchased-vehicle revenue rises 2.7% to $696.7 million. FY2026 is labeled unaudited. These figures focus the thesis on growth, cost absorption and reinvestment. [1]"
     )
     para(
-        "[Steven: Add cited competitive and customer-retention evidence, management assessment, the strongest alternative explanation, and why the evidence favors the thesis.]",
+        "[Steven: Add a relevant industry overview, competitive strengths and weaknesses, customer-retention evidence, and management assessment. Cite public sources and address the strongest competing explanation.]",
         color="895824",
     )
 
@@ -111,7 +110,11 @@ def build():
     doc.add_page_break()
     heading("Weather evidence and the predictive question")
     para(
-        "NOAA records show different patterns by event type. These exhibits provide context; neither establishes an effect on Copart’s vehicle volumes or earnings. The four annual workbook observations cannot support the planned predictive test without longer financial history.",
+        "Proposed Copart connection: damaging weather may increase insured total-loss vehicles, some of which may be assigned to Copart and subsequently sold. Assignment share, auction timing, fees and handling costs determine the financial effect. This is a hypothesis to test, not an estimated relationship.",
+        9,
+    )
+    para(
+        "The figure describes historical U.S. weather records aligned to Copart’s fiscal calendar. It does not forecast future weather or establish changes in Copart revenue, volumes or earnings. It is not weighted by Copart’s footprint or insured-vehicle exposure, and it does not represent all catastrophe types or international operations.",
         9,
     )
     for image, width, caption, alt in [
@@ -121,12 +124,6 @@ def build():
             "Figure 1. FY2025 quarters against historical same-quarter medians. Full-sample comparison, not a point-in-time backtest.",
             "Historical weather distributions with FY2025 highlighted. All four flash-flood quarters exceed their median; three hail and flood quarters are below.",
         ),
-        (
-            images[1],
-            6.65,
-            "Figure 2. Seasonal medians and middle 50% across years. Seasonality must be controlled before attributing predictive value to weather.",
-            "Monthly hail, flash-flood and flood record seasonality across 2010 to 2025, with median curves and interquartile bands.",
-        ),
     ]:
         p = doc.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -135,12 +132,16 @@ def build():
         shape._inline.docPr.set("descr", alt)
         para(caption, 8)
     para(
-        "[After validation: add forecast target, sample/test periods, baseline error and weather-model error. No validated Copart weather forecast is available yet.]",
+        "[Predictive evidence: justify forward business assumptions in the separate financial model and explain their valuation impact. If adding a weather prediction, report the target, test periods and error versus a baseline. Four annual observations are insufficient for the planned weather evaluation; no weather earnings uplift is validated.]",
         8,
         color="895824",
     )
     para(
         "Source: NOAA Storm Events revised 2010–2025 snapshots, U.S. states/DC; ncei.noaa.gov/pub/data/swdi/stormevents/csvfiles/. Figures are the original Python-generated PNGs. Counts are event records, not unique storms or insured losses. Historical publication vintages are not reconstructed.",
+        8,
+    )
+    para(
+        "Submission format: final team-authored memorandum must be PDF, at most two pages including any appendix, with a separate Excel valuation model. DOCX is an editing format. Pagination has not been verified. All sources must be cited and initial AI research disclosed to the sponsor.",
         8,
     )
 
@@ -162,7 +163,7 @@ def build():
             if n.startswith("word/media/")
         ]
     assert sorted(embedded) == sorted(sha256(p.read_bytes()).hexdigest() for p in images)
-    print(f"Created {output}; both embedded image hashes match the original Python PNGs.")
+    print(f"Created {output}; all embedded image hashes match the original Python PNGs.")
 
 
 if __name__ == "__main__":
