@@ -1,0 +1,8 @@
+{
+  "source_sha256": "3f93c37150c9bbce0fe2116d681606453795469b3178151b2b47a5e1f60544a9",
+  "reference_quarters": 63,
+  "highlight_fiscal_year": 2025,
+  "density": "Gaussian KDE, Scott bandwidth; each panel normalized to own peak",
+  "jitter": "Horizontal jitter is decorative only, deterministic seed 42",
+  "interpretation": "Full-sample description, not a point-in-time backtest"
+}

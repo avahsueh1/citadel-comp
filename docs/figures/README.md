@@ -1,5 +1,15 @@
 # Weather research figures
 
+## Editorial distribution exhibit
+
+![FY2025 weather against historical distributions](04-editorial-weather-distribution.png)
+
+The new editorial layout highlights the four quarters of FY2025, the latest complete fiscal year in this dataset. All four had above-median flash-flood records, while three had below-median hail and flood records. The reference is each quarter number's median among 63 complete quarters within the 2010–2025 calendar-year source, including the highlighted year. This selection is a complete fiscal year, not the latest four available quarters.
+
+Gray dots show individual historical quarters; labeled colored dots show FY2025. Shading is a Gaussian kernel density estimate using Scott bandwidth, normalized separately to each panel's peak. Horizontal dot placement has no quantitative meaning. All panels share the same vertical percentage scale. Labels may be displaced for legibility; leader lines connect them to the true values. The extracted quarter values and source hash accompany the figure.
+
+Regenerate with `python scripts/build_editorial_weather.py`. PNG is 240 dpi; SVG is vector. The style is inspired by the editorial distribution examples discussed at https://www.juiceanalytics.com/writing/20-best-examples-of-charts-and-graphs ; all plotted values come from the project's NOAA dataset. It is an AI-assisted research exhibit, not independently authored competition submission content.
+
 These are descriptive research exhibits based on real NOAA data, not Copart financial forecasts. Use them to investigate and explain the weather component. The competition's submission-authorship restrictions still apply; these AI-assisted exhibits are research materials for the team to independently evaluate.
 
 ## Recommended main research exhibit: fiscal-quarter deviations
