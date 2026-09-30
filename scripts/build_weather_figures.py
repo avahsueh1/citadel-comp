@@ -29,6 +29,11 @@ def finish(fig, title, subtitle, path):
     fig.text(0.075, 0.025, FOOT, fontsize=7.5, color="#586474", linespacing=1.6)
     fig.savefig(path.with_suffix(".png"), dpi=220, facecolor="white")
     fig.savefig(path.with_suffix(".svg"), facecolor="white")
+    svg = path.with_suffix(".svg")
+    svg.write_text(
+        "\n".join(line.rstrip() for line in svg.read_text(encoding="utf-8").splitlines()) + "\n",
+        encoding="utf-8",
+    )
     plt.close(fig)
 
 
