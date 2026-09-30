@@ -4,6 +4,8 @@ Python workspace for public-data research, operating forecasts, and Monte Carlo 
 
 See [PROJECT_SCOPE.md](PROJECT_SCOPE.md) for the detailed research plan, data requirements, modeling and valuation methods, validation gates, deliverables, and schedule.
 
+The [paper research draft](docs/copart-paper-draft.md) references the separately submitted Excel valuation model and leaves thesis/testing placeholders for the team. See [paper/model handoff notes](docs/paper-model-handoff.md) for exact input/output references and unresolved valuation assumptions. Final submission prose must be independently authored under the competition rules.
+
 ## Setup (PowerShell)
 
 Use Python 3.11 or newer.
