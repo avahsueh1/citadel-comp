@@ -16,7 +16,7 @@ def build():
     output = root / "docs" / "copart-research-report.docx"
     figures = root / "docs" / "figures"
     images = [
-        figures / "04-editorial-weather-distribution.png",
+        figures / "05-simple-weather-comparison.png",
     ]
     doc = Document()
     section = doc.sections[0]
@@ -120,9 +120,9 @@ def build():
     for image, width, caption, alt in [
         (
             images[0],
-            5.65,
-            "Figure 1. FY2025 quarters against historical same-quarter medians. Full-sample comparison, not a point-in-time backtest.",
-            "Historical weather distributions with FY2025 highlighted. All four flash-flood quarters exceed their median; three hail and flood quarters are below.",
+            6.1,
+            "Figure 1. FY2025 weather records versus seasonal medians. Zero means the historical median; positive bars mean more records, negative bars fewer.",
+            "Three horizontal bar charts show FY2025 weather deviations. All four flash-flood quarters are above median; three hail and flood quarters are below. Calendar months label each quarter.",
         ),
     ]:
         p = doc.add_paragraph()
@@ -131,6 +131,11 @@ def build():
         shape = p.add_run().add_picture(str(image), width=Inches(width))
         shape._inline.docPr.set("descr", alt)
         para(caption, 8)
+    heading("Methodology")
+    para(
+        "We aggregate NOAA hail, flash-flood and flood records from 2010–2025 into Copart fiscal quarters. Each FY2025 count is compared with the median for the same quarter number across 63 complete quarters, including FY2025. Percentage deviation equals 100 times (count divided by median minus one). This retrospective comparison uses revised data and does not estimate insured losses or Copart financial outcomes.",
+        9,
+    )
     para(
         "[Predictive evidence: justify forward business assumptions in the separate financial model and explain their valuation impact. If adding a weather prediction, report the target, test periods and error versus a baseline. Four annual observations are insufficient for the planned weather evaluation; no weather earnings uplift is validated.]",
         8,

@@ -20,6 +20,8 @@ The supplied model records FY2026 revenue of $4,666.2 million, up 0.4% from FY20
 
 ## Weather evidence and predictive test
 
+**Methodology.** We aggregate NOAA hail, flash-flood and flood records from 2010-2025 into Copart fiscal quarters. Each FY2025 count is compared with the median for the same quarter number across 63 complete quarters, including FY2025. Percentage deviation equals 100 times (count divided by median minus one). This retrospective comparison uses revised data and does not estimate insured losses or Copart financial outcomes.
+
 Our NOAA analysis measures hail, flash-flood, and flood event records across U.S. states and the District of Columbia. Relative to the median for the same Copart fiscal quarter, all four FY2025 quarters had above-median flash-flood records, while three had below-median hail records. This difference makes a single claim of unusually strong or weak weather insufficient: event type, geography, and the timing of vehicle assignments and auctions may matter. [2]
 
 These observations do not measure insured losses or Copart volumes. The weather regression has not yet been validated against Copart financial actuals, and revised NOAA files do not reconstruct information available at each historical forecast date. The workbook's four annual observations are insufficient for the planned predictive evaluation. Until a longer, preferably quarterly series is tested, weather should remain contextual evidence rather than a numerical earnings uplift.

@@ -25,7 +25,7 @@ The intended mechanism is weather damage, potential insured total losses, possib
 
 The existing Python exhibit is descriptive and aligned to Copart fiscal quarters. It forecasts neither weather nor financial results. The regression implementation has not been validated on Copart actuals. The newly supplied workbook contains four annual historical observations, insufficient for the planned weather-model test. No weather-derived revenue uplift should be asserted at present.
 
-The report now retains the editorial distribution figure only, creating space for the business connection and predictive limitations. The original seasonality PNG remains in the repository as supporting research. The embedded distribution PNG is byte-for-byte identical to the Python output.
+The report now uses the simpler Python-generated horizontal-bar comparison with calendar-month labels and a short methodology paragraph. The earlier distribution and seasonality PNGs remain supporting research. The embedded comparison PNG is byte-for-byte identical to the Python output.
 
 ## AI and originality boundary
 

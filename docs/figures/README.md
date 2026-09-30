@@ -1,5 +1,13 @@
 # Weather research figures
 
+## Simple report exhibit
+
+![FY2025 weather comparison](05-simple-weather-comparison.png)
+
+The Word report now uses this simpler horizontal-bar exhibit. Each category has four fiscal-quarter bars with calendar-month labels, a common percentage scale, and a zero line representing the same-quarter historical median. Direct labels show the calculated deviations. Positive means more weather records, not a favorable financial outcome. It uses the same data and reference medians as the distribution exhibit below.
+
+Regenerate with `python scripts/build_simple_weather.py`, then `python scripts/build_paper_docx.py`. The renderer uses a fixed SVG hash salt and excludes SVG timestamps. PNG, SVG and a source/value manifest are retained; the earlier distribution chart remains supporting research.
+
 ## Editorial distribution exhibit
 
 ![FY2025 weather against historical distributions](04-editorial-weather-distribution.png)
